@@ -1,6 +1,9 @@
+--bgcolor white
+--color black
 --author christoph
 --title git lightningtalk
 --date 26.2.2012
+
 --newpage
 --center What is Versioncontrol
 
@@ -18,7 +21,7 @@
 * Offline commit
 
 --newpage 
---center Git workflow
+--center Git workflow - clone
 --beginshelloutput
 $ git clone lab:git-lightningtalk.git         
 Cloning into 'git-lightningtalk'...
@@ -29,7 +32,7 @@ Receiving objects: 100% (3/3), done.
 
 --endshelloutput
 --newpage 
---center Git workflow
+--center Git workflow - branch
 --beginshelloutput
 $ git checkout -b feature-x           
 Switched to a new branch 'feature-x'
@@ -37,7 +40,7 @@ $ vim talk.tpp
 
 --endshelloutput
 --newpage 
---center Git workflow
+--center Git workflow - commit
 --beginshelloutput
 $ git commit talk.tpp -m "tolles neues feature"          
 [feature-x f65f917] tolles neues feature
@@ -45,7 +48,7 @@ $ git commit talk.tpp -m "tolles neues feature"
 
 --endshelloutput
 --newpage 
---center Git workflow
+--center Git workflow - merge
 --beginshelloutput
 $ git checkout master          
 Switched to branch 'master'
@@ -57,7 +60,7 @@ Fast-forward
 
 --endshelloutput
 --newpage 
---center Git workflow
+--center Git workflow - log
 --beginshelloutput
 $ git log             
 commit 8b78aee6d5d01e95d23219bc3a4e52dd2137609a
@@ -77,7 +80,7 @@ Date:   Tue Feb 26 20:00:23 2013 +0100
 
 --endshelloutput
 --newpage 
---center Git workflow
+--center Git workflow - push
 --beginshelloutput
 $  git push          
 RSA host key for IP address '2001:868:100:300::200' not in list of known hosts.
@@ -89,3 +92,18 @@ Total 3 (delta 1), reused 0 (delta 0)
 To lab:git-lightningtalk.git
    8b78aee..f65f917  master -> master
 --endshelloutput
+
+--newpage
+--center Das tolle am branchen
+* mergen
+* atomisierung/kapselung
+* cherrypicking
+
+--center nicht nur für sourcecode
+* jekyll
+* ikiwiki
+* server-config/puppet
+* bup
+* dotfiles/etckeeper
+* eigentlich alles
+* lightningtalks
