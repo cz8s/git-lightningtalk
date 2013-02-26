@@ -19,36 +19,73 @@
 
 --newpage 
 --center Git workflow
-$ make love
-Make: Don't know how to make love. Stop.
-$ %blow
-%blow: No such job.
-$ PATH=pretending! /usr/ucb/which sense
-no sense in pretending!
----
-$ drink < bottle; opener
-bottle: cannot open
-opener: not found
----
-$ If I had a ( for every $ Congress spent, what would I have?
-Too many ('s.
-$
---endshelloutput
----
-And here some more text.
---newpage
---center And here some more serious shell things
 --beginshelloutput
-$ ls /
-bin/    dev/     initrd/          lost+found/  repos/  tftpboot/  vmlinuz@
-boot/   etc/     initrd.img@      mnt/         root/   tmp/       vmlinuz.old@
-cdrom/  floppy/  initrd.img.old@  opt/         sbin/   usr/
-data/   home/    lib/             proc/        sys/    var/
-$ uptime
- 23:22:41 up 23 days,  4:18,  8 users,  load average: 0.10, 0.25, 0.25
-$ sleep 3
---sleep 3
-$ uname -rnsm
-Linux sdfkjx 2.6.6-1-686-smp i686
-$
+$ git clone lab:git-lightningtalk.git         
+Cloning into 'git-lightningtalk'...
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0)
+Receiving objects: 100% (3/3), done.
+
+--endshelloutput
+--newpage 
+--center Git workflow
+--beginshelloutput
+$ git checkout -b feature-x           
+Switched to a new branch 'feature-x'
+$ vim talk.tpp 
+
+--endshelloutput
+--newpage 
+--center Git workflow
+--beginshelloutput
+$ git commit talk.tpp -m "tolles neues feature"          
+[feature-x f65f917] tolles neues feature
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+--endshelloutput
+--newpage 
+--center Git workflow
+--beginshelloutput
+$ git checkout master          
+Switched to branch 'master'
+$ git merge feature-x 
+Updating 8b78aee..f65f917
+Fast-forward
+ talk.tpp |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+--endshelloutput
+--newpage 
+--center Git workflow
+--beginshelloutput
+$ git log             
+commit 8b78aee6d5d01e95d23219bc3a4e52dd2137609a
+Author: Christoph <chris@inferno.nadir.org>
+Date:   Tue Feb 26 21:03:20 2013 +0100
+
+    tolles neues feature
+
+commit 5a38aee6d5d01e95d23219bc3a4e52dd2137605a
+Author: Christoph <chris@inferno.nadir.org>
+Date:   Tue Feb 26 20:00:23 2013 +0100
+
+    doofen bug gefixed
+
+		* recursion war schuld
+    * hat zur racecondition gefuehrt
+
+--endshelloutput
+--newpage 
+--center Git workflow
+--beginshelloutput
+$  git push          
+RSA host key for IP address '2001:868:100:300::200' not in list of known hosts.
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 286 bytes, done.
+Total 3 (delta 1), reused 0 (delta 0)
+To lab:git-lightningtalk.git
+   8b78aee..f65f917  master -> master
 --endshelloutput
