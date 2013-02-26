@@ -83,7 +83,6 @@ Date:   Tue Feb 26 20:00:23 2013 +0100
 --center Git workflow - push
 --beginshelloutput
 $  git push          
-RSA host key for IP address '2001:868:100:300::200' not in list of known hosts.
 Counting objects: 5, done.
 Delta compression using up to 4 threads.
 Compressing objects: 100% (2/2), done.
