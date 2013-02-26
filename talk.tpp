@@ -17,8 +17,6 @@
 * Von Linus T.
 * Offline commit
 
---exec feh -F -Z ~/privat/christoph.jpeg
-
 --newpage 
 --center Git workflow
 --beginshelloutput
