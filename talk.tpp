@@ -49,6 +49,6 @@ $ uptime
 $ sleep 3
 --sleep 3
 $ uname -rnsm
-Linux tintifax 2.6.6-1-686-smp i686
+Linux sdfkjx 2.6.6-1-686-smp i686
 $
 --endshelloutput
