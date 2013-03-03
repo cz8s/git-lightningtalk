@@ -97,8 +97,9 @@ To lab:git-lightningtalk.git
 * mergen
 * atomisierung/kapselung
 * cherrypicking
+--newpage
 
---center nicht nur für sourcecode
+--center git ist nicht nur für sourcecode super
 * jekyll
 * ikiwiki
 * server-config/puppet
