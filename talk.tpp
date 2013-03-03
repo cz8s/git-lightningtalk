@@ -18,7 +18,8 @@
 * Verteilt
 * Mergen ist einfach
 * Von Linus T.
-* Offline commit
+  (http://youtu.be/4XpnKHJAok8)
+* Offline arbeiten
 
 --newpage 
 --center Git workflow - clone
