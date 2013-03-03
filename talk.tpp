@@ -15,6 +15,7 @@
 
 --newpage
 --center Das besondere an git
+* War mal kompliziert
 * Verteilt
 * Mergen ist einfach
 * Von Linus T.
