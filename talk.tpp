@@ -97,13 +97,12 @@ To lab:git-lightningtalk.git
 * mergen
 * atomisierung/kapselung
 * cherrypicking
---newpage
 
+--newpage
 --center git ist nicht nur für sourcecode super
 * jekyll
 * ikiwiki
 * server-config/puppet
 * bup
 * dotfiles/etckeeper
-* eigentlich alles
 * lightningtalks
