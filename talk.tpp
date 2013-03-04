@@ -108,3 +108,4 @@ To lab:git-lightningtalk.git
 * bup
 * dotfiles/etckeeper
 * lightningtalks
+* bluee
